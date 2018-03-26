@@ -14,10 +14,12 @@
       <ul class="nav navbar-nav">
 
         
-        <li class="{{ Request::is('fiats') ? "active" : "" }}"><a href="/fiats">Live Price</a></li>
-        <li><a href="/home">One-way</a></li>
+        <li class="{{ Request::is('fiats') ? "active" : "" }}"><a href="/liveprices">Live Price</a></li>
+        <li class="{{ Request::is('oneways/*') ? "active" : "" }}"><a href="/oneways/btc">One-way</a></li>
+        <li class="{{ Request::is('loops/*') ? "active" : "" }}"><a href="/loops/btceth">Loop</a></li>
         <li class="{{ Request::is('signals') ? "active" : "" }}"><a href="/signals">Black Panther</a></li>
-        <li class="{{ Request::is('whalekrakens') ? "active" : "" }}"><a href="/whalekrakens">Whale Catcher</a></li>
+        <li class="{{ Request::is('whales/*') ? "active" : "" }}"><a href="/whales/binance/btc">Whale Catcher</a></li>
+
         <li><a href="/home">Green Python</a></li>
               
 
